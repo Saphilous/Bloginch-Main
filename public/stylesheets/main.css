@@ -1,0 +1,67 @@
+body
+{
+    background-image: url("https://images.unsplash.com/photo-1509824189536-24ab5d1ecb00?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+    background-size: cover;
+    background-position: center;
+}
+html
+{
+    height: 100%;
+}
+.navleftsem
+{
+    padding-left: 170px;
+}
+.Box1
+{
+    text-align: center;
+    padding-top: 150px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+h1
+{
+    font-weight: 700;
+    font-size: 5em;
+}
+hr
+{
+    width: 400px;
+}
+.inclass
+{
+    color: red;
+}
+.navbar-default
+{
+    color: black;
+    background-color: deeppink;
+    border-color: deeppink;
+}
+.navbar-default .navbar-brand
+{
+    color: black;
+}
+.navbar-default .navbar-brand:hover
+{
+    color: goldenrod;
+}
+
+.navbar-default .navbar-nav>li>a 
+{
+    color: black;
+}
+#mainNavbar .nav-link:hover {
+    color: #EA1C2C !important;
+}
+.navbar-default .navbar-nav>li>a:hover{
+    color: goldenrod !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: goldenrod;
+}
+#signup
+{
+    margin-top: 50px !important;
+}

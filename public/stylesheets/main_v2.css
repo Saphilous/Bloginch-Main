@@ -1,0 +1,230 @@
+html
+{
+    height: 100%;
+}
+body
+{
+    height: 100%;
+    background: #121212;
+
+}
+.row
+{
+    margin-left: 0 auto;
+    text-align: center !important;
+    align-items: center;
+}
+
+#container1
+{
+    padding: 0;
+    margin: 0;
+    background-color: #292929;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100%;
+}
+#heading
+{
+    float: none;
+    margin: 0 auto;
+}
+
+.navleftsem
+{
+    padding-left: 170px;
+}
+.Box1
+{
+    text-align: center;
+    padding-top: 150px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+h1
+{
+    font-weight: 700;
+    font-size: 5em;
+}
+hr
+{
+    width: 400px;
+}
+.inclass
+{
+    color: red;
+}
+.inclass2
+{
+    color: #FF0266;
+}
+.inclass3
+{
+    color: #03DAC5;
+    margin-bottom: 15px;
+}
+#imagecontainer
+{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#img1
+{
+    max-height: 50%;
+    height: auto;
+    max-width: 100%;
+}
+#image1
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+.thumbnail{
+    border: 0px !important;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img
+{
+    overflow: hidden;
+}
+#mainbody
+{
+    font-size: x-large !important;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.alignleft
+{
+    text-align: right;
+}
+#author
+{
+    color: red;
+}
+#bodyarea
+{
+    margin-top: 10px;
+    padding-top: 5px;
+}
+#titlethumbnail
+{
+    color: #BB86FC;
+}
+#colortitle
+{
+    color: #BB86FC;
+  
+}
+#colortitle2
+{
+    color: white;
+  
+}
+#colorcontainer
+{
+    background-color: #121212;
+}
+#colorjumbo
+{
+    background-color: #121212;
+}
+#ruler
+{
+    width: 100%;
+}
+#subheading
+{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+#subheading2
+{
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+.navbar-default
+{
+    color: #FF0266;
+    background-color: black;
+    border-color: black;
+}
+.navbar-default .navbar-brand
+{
+    color: white;
+}
+.navbar-default .navbar-brand:hover
+{
+    color: #FF0266;
+}
+
+.navbar-default .navbar-nav>li>a 
+{
+    color: white;
+}
+.navbar-default .navbar-nav>li>a:hover{
+    color: #BB86FC !important;
+}
+.whitetext
+{
+    color: white;
+}
+
+#togglebutton{
+    background-color: transparent;
+    border-color: goldenrod;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: goldenrod;
+}
+.btn-info
+{
+    background-color: #03DAC5;
+    color: black;
+    border-radius: 25%;
+}
+.btn-info:hover{
+    background-color: white;
+    color: black;
+}
+
+#commentcol
+{
+    text-align: center;
+    margin-top: 15px;
+}
+.badge
+{
+    background-color: #03DAC5;
+    color: #121212;
+    min-width: 20px;
+    font-size: medium;
+    border-radius: 25%;
+    margin-bottom: 10px;
+}
+.badge:hover
+{
+    background-color: white;
+    color: black !important;
+}
+#deletebutton
+{
+    border-radius: 25%;
+}
+#editbutton
+{
+    font-size: medium;
+}
+.thumbnail
+{
+background-color: #292929;
+padding: 0px;
+}
+.img-thumbnail
+{
+    padding: 0px;
+    overflow: hidden;
+}
+#authorname
+{
+    color: #BB86FC;
+}
