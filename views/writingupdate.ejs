@@ -1,0 +1,10 @@
+<% include partials/Header_v2 %>
+<h1>Update your Blog here!</h1>
+<div class="container"></div>
+<form action="/blogs/<%=blog._id%>?_method=PUT" method="POST">
+    <div class="col-9"></div>
+<input type="text" name="blog[title]" value="<%=blog.title%>">
+<div class="col-9"></div>
+<textarea name="blog[bodys]" id="bodyarea"><%=blog.bodys%></textarea>
+<input type="submit">
+</form>

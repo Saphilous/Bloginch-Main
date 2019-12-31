@@ -1,0 +1,19 @@
+<% include partials/header %>
+<div class="container" id="signup">
+
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>Add a new Comment!</h1>    
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+
+<form action="/blogs/<%=blog._id%>/comments" method="POST">
+    <input type="text" name="comment[title]" required placeholder="title">
+    <input type="text" name="comment[body]" placeholder="Add a comment">
+    <input type="submit" name="commenting">
+</div>
+</div>
+</form>
+</div>

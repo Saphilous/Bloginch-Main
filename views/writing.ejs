@@ -1,0 +1,14 @@
+<% include partials/Header_v2 %>
+<h1>Start Writing your new Blog!</h1>
+<div class="container">
+<form action="/blogs" method="POST">
+<div class="col-9">
+<input type="text" name="title" placeholder="Title">
+<input type="text" name="image" placeholder="image url goes here">
+</div>
+<div class="col-9">
+<textarea name="bodys" id="bodyarea">Body goes here</textarea>
+</div>
+<input type="submit" name="submit">
+</div>
+</form>

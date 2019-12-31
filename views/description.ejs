@@ -1,0 +1,42 @@
+<% include partials/Header_v2 %>
+<div class="container">
+    <div class="row">
+            <span class="align-middle">
+<h1 id="colortitle"><%=blogdescript.title%></h1>
+</span>
+</div>
+</div>
+<div class="row">
+<div class="container" id="imagecontainer">
+<div class="col-9">
+<div class="thumbnail" id="image1">
+<img src="<%= blogdescript.image%>" class="img-responsive" alt="Title Image" id="imageone">
+</div>
+</div>
+<div class="alignleft"><h3><span class="inclass2">Author: <%=blogdescript.author.username%></span> </h3></div>
+</div>
+</div>
+
+
+<div class="container">
+    <% if (currentuser != undefined && blogdescript.author.id.equals(currentuser._id)) {%>
+        <form action="/blogs/<%=blogdescript._id%>?_method=DELETE" method="POST">
+            <button class="btn btn-danger" id="deletebutton"><i class="fas fa-trash-alt"></i>Delete</button>
+            <a class="btn btn-xs btn-info" href="/blogs/<%= blogdescript._id %>/update" id="editbutton"><i class="fas fa-edit fa-fw"></i>Edit</a>
+        </form>
+    <%}%>
+    <hr id="ruler">
+    <div class="row" id="subheading2">
+        <h1><span class="inclass3" >Content</span></h1>
+<div class="row">
+    <div class="col-9 col-sm-12" id="colortitle2">
+<p id="mainbody"><%=blogdescript.bodys%></p>
+</div>
+</div>
+</div>
+<div class="container">
+    <div class="row">
+
+<a class="btn btn-xs btn-info" href="/blogs/<%= blogdescript._id %>/comments"><i class="fas fa-comments fa-fw"></i><h5>View with comments</h5></a>
+</div>
+</div>

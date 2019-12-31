@@ -1,0 +1,92 @@
+<% include partials/Header_v2 %>
+<div class="container">
+    <div class="row">
+            <span class="align-middle">
+<h1 id="colortitle"><%=blog.title%></h1>
+</span>
+</div>
+</div>
+<div class="row">
+<div class="container" id="imagecontainer">
+<div class="col-9">
+<div class="thumbnail" id="image1">
+<img src="<%= blog.image%>" class="img-responsive" alt="Title Image" id="imageone">
+</div>
+</div>
+<div class="alignleft"><h3><span class="inclass2">Author: <%=blog.author.username%></span> </h3></div>
+</div>
+</div>
+
+
+<div class="container">
+    <div class="col-6">
+            
+        <% if (currentuser && blog.author.id.equals(currentuser._id)) {%>
+            <form action="/blogs/<%=blog._id%>?_method=DELETE" method="POST">
+                <button class="btn btn-danger" id="deletebutton"><i class="fas fa-trash-alt"></i>Delete</button>
+                <a class="btn btn-xs btn-info" href="/blogs/<%= blog._id %>/update" id="editbutton"><i class="fas fa-edit fa-fw"></i>Edit</a>
+            </form>
+        <%}%>
+    <hr id="ruler">
+    <div class="row" id="subheading2">
+        <h1><span class="inclass3" >Content</span></h1>
+<div class="row">
+    <div class="col-9 col-sm-12" id="colortitle2">
+<p id="mainbody"><%=blog.bodys%></p>
+</div>
+</div>
+</div>
+<div class="row">
+
+            <div class="col-6">
+                    <a class="btn btn-xs btn-info" href="/blogs/<%= blog._id %>"><i class="fas fa-comment-slash fa-fw"></i> <h5>View without comments</h4></a>                  
+            </div>
+            <div class="col-6" id="commentcol">
+                    <a href="/blogs/<%= blog._id %>/comments/new" class="badge badge-info">Add New Comment</a>
+            </div>
+
+
+        </div>
+    </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+        <div class="col-12">
+            <hr>
+            <span><h2 id="colortitle">Comments</h2></span>
+            <% blog.comments.forEach(function(comment){ %>
+                <div>
+                    <div>
+                        <h3 class="inclass2"><%= comment.author.username %></h3>
+                        <strong class="inclass2"><%=comment.title%></strong>
+                        <p class="whitetext">
+                            <%= comment.body %> 
+                        </p>
+                        <% if(currentuser &&comment.author.id.equals(currentuser._id) ){%>
+                            <a href="/blogs/<%=blog._id %>/comments/<%=comment._id %>/update">Edit</a>
+                            <form id="delete-form" action="/blogs/<%=blog._id %>/comments/<%=comment._id %>?_method=DELETE" method="POST">
+                                <input type="submit" class="btn btn-xs btn-danger" value="Delete">
+                        <%}%>
+
+                        
+                        </form>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+

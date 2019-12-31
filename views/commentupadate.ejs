@@ -1,0 +1,6 @@
+<form action="/blogs/<%=blogid%>/comments/<%= comment._id %>?_method=PUT" method="POST">
+    <input type="text" name="comment[title]" value="<%=comment.title%>" required>
+<%=comment.author.username%>
+    <input type="text" name="comment[body]" value="<%=comment.body%>">
+    <input type="submit" name="commenting">
+</form>
