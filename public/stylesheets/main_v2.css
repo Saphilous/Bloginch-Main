@@ -228,3 +228,104 @@ padding: 0px;
 {
     color: #BB86FC;
 }
+
+#ruler2
+{
+    color: white;
+}
+
+#headnavabove
+{
+    border-bottom: 1px solid white;
+}
+
+.container-fluid
+{
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+/*toggler menu dropdown*/
+
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle {
+  color: white;
+
+}
+
+.btn{
+    padding-top: 2px !important;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-secondary.dropdown-toggle:focus {
+  color: #BB86FC;
+}
+
+.btn-secondary.dropdown-toggle:hover {
+    color: #BB86FC;
+  }
+
+  .btn-secondary.dropdown-toggle {
+    color: white;
+  }
+
+  .btn-secondary.dropdown-toggle:focus {
+    color: #BB86FC;
+  }
+
+  .dropdown-menu {
+    transition: ease-in;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 20rem;
+    padding: 0.5rem 0;
+    margin: 0 0 0;
+    font-size: medium;
+    color: #BB86FC;
+    text-align: left;
+    list-style: none;
+    background-color: #292929;
+    background-clip: padding-box;
+    border: 0px;
+    border-radius: 0;
+  }
+
+  .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #BB86FC;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+  }
+
+  .jumbotron
+  {
+      padding-top: 100px;
+  }
+
+#containertitle
+{
+    padding-top: 100px;
+}
+
+.dropdown-item
+{
+    color: white;
+}
+
+.dropdown-item:hover
+{
+
+    color: #BB86FC;
+    text-decoration: none;
+}
