@@ -1,0 +1,29 @@
+<% include partials/Navbar_for_blogs %>
+<div class="container" id="main">
+        <header class="jumbotron" id="colorjumbo">
+            <div class="container" id="colorcontainer">
+                <div class="row">
+                <h1>Blog<span class="inclass2">INch</span></h1>
+<h1 id="colortitle"><span class="inclass2">Blog</span> Every <span class="inclass2">Inch</span> of your <span class="inclass2">Mind</span></h1>
+</div>
+</div>
+</header>
+<hr id="ruler">
+<div class="row" id="subheading">
+<h1><span class="inclass3">Blogs Today</span></h1>
+</div>
+<div class="row text-center" style="display:flex; flex-wrap: wrap;">
+<% blogpost.forEach(function (blogpost) {%>
+
+    <div class="col-md-4 col-sm-6" id="imgthumb">
+            <h2 id="titlethumbnail"><%=blogpost.title%></h2>
+            <div class="thumbnail">
+    <img src="<%= blogpost.image %>" class="img-thumbnail">
+    <h4 id="authorname"><%=blogpost.author.username%></h4>
+    <p><%=blogpost.body%></p>
+    <a href="/blogs/<%=blogpost._id%>">"read more</a>
+</div>
+</div>
+<%})%>
+</div>
+</div>
