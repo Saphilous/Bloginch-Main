@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>YelpCamp</title>
+        <title>Bloginch</title>
         <script src="https://kit.fontawesome.com/1f7a288607.js"></script>
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -12,31 +12,68 @@
 
         
     </head>
-            <body>
-               <nav class="navbar navbar-expand-lg navbar-default naavbar-fixed-top" id=mainNavbar>
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <a class="navbar-brand" href="/">Bloginch</a>
-                            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                            data-target=".navbar-collapse">
-                            <i class="fas fa-bars"></i>
-                        </button>        
-                        </div>
-                        <div class="collapse navbar-collapse">
-                            <ul class="nav navbar-nav navbar-right">
-                              <li><a href="/">Home</a></li>
-                              <li><a href="/blogs">Blogs</a></li>
-                              <% if(!currentuser) {%>
-                                <li><a href="/login"><i class="fas fa-user"></i>Login</a></li>
-                                <li><a href="/register"><i class="fas fa-user-plus"></i>Sign Up</a></li>
-                                <%} else {%>
-                                    <li><a href="/logout"><i class="fas fa-user"></i>Logout</a></li>
-                                 <% }%> 
-                                    <li><a href="/blogs/new"><i class="fas fa-pen-fancy fa-fw"></i>New Blog</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+    <body>
+        <nav class="navbar navbar-default navbar-expand-lg navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="row" id="headnavabove">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Bloginch</a>
+                    <button id="togglebutton" type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-collapse">
+                    <i class="fas fa-bars"></i>
+                </button> 
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="/">Home</a></li>
+                     <% if(!currentuser) {%>
+                        <li><a href="/login"><i class="fas fa-user"></i>Login</a></li>
+                        <li><a href="/register"><i class="fas fa-user-plus"></i>Sign Up</a></li>
+                        <%} else {%>
+                            <li><a href="/logout"><i class="fas fa-user"></i>Logout</a></li>
+                         <% }%> 
+                      <li><a href="/blogs/new"><i class="fas fa-pen-fancy fa-fw"></i>New Blog</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+        <div class="row">
+            <div class="navbar-header">
+            <div class="dropdown dropdown-menu-left">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-bars"> Categories </i>
+                </a>
+              
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="/technology">Technology and Innovation</a>
+                  <a class="dropdown-item" href="/Environment">Environment</a>
+                  <a class="dropdown-item" href="/sports">Sports</a>
+                  <a class="dropdown-item" href="/vcecorner">Vasavi Corner</a>
+                  <a class="dropdown-item" href="/Photography">Photography</a>
+                  <a class="dropdown-item" href="/International">International News</a>
+                  <a class="dropdown-item" href="/National">National News</a>
+                  <a class="dropdown-item" href="/dailyupdates">Daly Updates</a>
+                  <a class="dropdown-item" href="/clubs">Clubs</a>
+                  <a class="dropdown-item" href="/Artsandpoetry">Art and Poetry</a>
+                  <a class="dropdown-item" href="/Faccultycolumn">Facculty column</a>
+                  <a class="dropdown-item" href="/Interviews">Interviews</a>
+                  <a class="dropdown-item" href="/Reviewcorner">Review corner</a>
+                  <a class="dropdown-item" href="/ProgrammingHub">Programming Hub</a>
+                  <a class="dropdown-item" href="/Aptitude">Aptitude Based Column</a>
+                  <a class="dropdown-item" href="/memes">Memes</a>
+                  <a class="dropdown-item" href="/Offers">Offers</a>
+                  <a class="dropdown-item" href="/PositivityCorner">Positivity Corner</a>
+                  <a class="dropdown-item" href="/Advertising">Advertising</a>
+                  <a class="dropdown-item" href="/Chief's_Column">Chief's Column</a>
+
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+        </nav>
                 <div class="container">
         
 
