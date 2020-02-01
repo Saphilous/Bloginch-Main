@@ -1,6 +1,5 @@
 var express      =  require('express')
 const app        =  express()
-const port       =  50007
 var path=require("path")
 var bodyparser   =  require("body-parser")
 var methodOverride = require("method-override")
@@ -14,17 +13,17 @@ var Comment    = require("./modules/comment")
 var User=require("./modules/user")
 var indexroutes=require("./routes/Index")
 var blogroutes=require("./routes/Blogs")
+var categoryroutes=require("./routes/Categories")
 var commentroutes=require("./routes/Comments")
 var middleware=require("./middleware/index")
-
+//mongoose.connect("process.env.DATABASEURL");
+mongoose.connect('mongodb+srv://saphilous:maheshreddy@bloginch-huiub.mongodb.net/test?retryWrites=true&w=majority', {useNewUrlParser: true,  useUnifiedTopology: true});
+mongoose.set('useFindAndModify', false);
 
 app.use(bodyparser.urlencoded({extended: true}));
 app.use(methodOverride("_method"))
 app.use(express.static(__dirname + "/public"));
 // mongoose connection line
-mongoose.connect('mongodb://localhost:27017/blogstorage', {useNewUrlParser: true});
-mongoose.set('useFindAndModify', false);
-app.use(flash())
 
 //the session in express
 
@@ -56,6 +55,7 @@ Passport.deserializeUser(User.deserializeUser());
 app.use(indexroutes)
 app.use(blogroutes)
 app.use(commentroutes)
+app.use(categoryroutes)
 
 // mongo db must be connected and now has a model to follow although not necessarily
 // Restful routes start now
@@ -82,4 +82,6 @@ app.use(commentroutes)
 
 
 // program ends above this line
+const port = 2017
+
 app.listen(port, () => console.log(`Example app listening on port port!`))
