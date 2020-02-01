@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>YelpCamp</title>
+        <title>BlogInch</title>
         <script src="https://kit.fontawesome.com/1f7a288607.js"></script>
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -16,6 +16,7 @@
             <body>
                 <nav class="navbar navbar-default navbar-expand-lg navbar-fixed-top">
                     <div class="container-fluid">
+                        <div class="row" id="headnavabove">
                         <div class="navbar-header">
                             <a class="navbar-brand" href="/">Bloginch</a>
                             <button id="togglebutton" type="button" class="navbar-toggle" data-toggle="collapse"
@@ -37,7 +38,54 @@
                             </ul>
                         </div>
                     </div>
+                </div>
+                <div class="container-fluid">
+                <div class="row">
+                    <div class="navbar-header">
+                    <div class="dropdown dropdown-menu-left">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-bars"> Categories </i>
+                        </a>
+                      
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="/technology">Technology and Innovation</a>
+                          <a class="dropdown-item" href="/Environment">Environment</a>
+                          <a class="dropdown-item" href="/sports">Sports</a>
+                          <a class="dropdown-item" href="/vcecorner">Vasavi Corner</a>
+                          <a class="dropdown-item" href="/Photography">Photography</a>
+                          <a class="dropdown-item" href="/International">International News</a>
+                          <a class="dropdown-item" href="/National">National News</a>
+                          <a class="dropdown-item" href="/dailyupdates">Daly Updates</a>
+                          <a class="dropdown-item" href="/clubs">Clubs</a>
+                          <a class="dropdown-item" href="/Artsandpoetry">Art and Poetry</a>
+                          <a class="dropdown-item" href="/Faccultycolumn">Facculty column</a>
+                          <a class="dropdown-item" href="/Interviews">Interviews</a>
+                          <a class="dropdown-item" href="/Reviewcorner">Review corner</a>
+                          <a class="dropdown-item" href="/ProgrammingHub">Programming Hub</a>
+                          <a class="dropdown-item" href="/Aptitude">Aptitude Based Column</a>
+                          <a class="dropdown-item" href="/memes">Memes</a>
+                          <a class="dropdown-item" href="/Offers">Offers</a>
+                          <a class="dropdown-item" href="/PositivityCorner">Positivity Corner</a>
+                          <a class="dropdown-item" href="/Advertising">Advertising</a>
+                          <a class="dropdown-item" href="/Chief's_Column">Chief's Column</a>
+
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
                 </nav>
                 <div class="container">
         
+                  <!-- % if(error && error.length > 0){ %>
+                        <div class="alert alert-danger" role="alert">
+                            %= error %>
+                        </div>
+                    % } %>
+                    % if(success && success.length > 0){ %>
+                        div class="alert alert-success" role="alert">
+                            %= success %>
+                        </div>
+                    % } %>
+                </div> -->
                
